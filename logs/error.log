@@ -1,0 +1,54 @@
+2022/08/25 12:54:59 [notice] 1#1: using the "epoll" event method
+2022/08/25 12:54:59 [notice] 1#1: nginx/1.21.6
+2022/08/25 12:54:59 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/08/25 12:54:59 [notice] 1#1: OS: Linux 5.15.0-1011-oracle
+2022/08/25 12:54:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/25 12:54:59 [notice] 1#1: start worker processes
+2022/08/25 12:54:59 [notice] 1#1: start worker process 30
+2022/08/25 12:54:59 [notice] 1#1: start worker process 31
+2022/08/25 12:55:35 [warn] 31#31: *7 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 42.73.17.151, server: , request: "GET /static/js/2.6edc03c8.chunk.js HTTP/1.1", upstream: "http://172.18.0.2:80/static/js/2.6edc03c8.chunk.js", host: "141.147.174.213", referrer: "http://141.147.174.213/welcome"
+2022/08/25 12:55:35 [warn] 31#31: *8 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 42.73.17.151, server: , request: "GET /static/js/main.01bfde30.chunk.js HTTP/1.1", upstream: "http://172.18.0.2:80/static/js/main.01bfde30.chunk.js", host: "141.147.174.213", referrer: "http://141.147.174.213/welcome"
+2022/08/25 12:55:36 [warn] 30#30: *2 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 42.73.17.151, server: , request: "GET /static/media/Inter-SemiBold.c6588ec1.ttf HTTP/1.1", upstream: "http://172.18.0.2:80/static/media/Inter-SemiBold.c6588ec1.ttf", host: "141.147.174.213", referrer: "http://141.147.174.213/static/css/main.a224ae8d.chunk.css"
+2022/08/25 12:55:36 [warn] 31#31: *1 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 42.73.17.151, server: , request: "GET /static/media/Inter-Regular.9cd7588f.ttf HTTP/1.1", upstream: "http://172.18.0.2:80/static/media/Inter-Regular.9cd7588f.ttf", host: "141.147.174.213", referrer: "http://141.147.174.213/static/css/main.a224ae8d.chunk.css"
+2022/08/25 12:55:36 [warn] 31#31: *17 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/5/00/0000000005 while reading upstream, client: 42.73.17.151, server: , request: "GET /static/media/Inter-Medium.18b8c68e.ttf HTTP/1.1", upstream: "http://172.18.0.2:80/static/media/Inter-Medium.18b8c68e.ttf", host: "141.147.174.213", referrer: "http://141.147.174.213/static/css/main.a224ae8d.chunk.css"
+2022/08/25 12:58:33 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/25 12:58:33 [notice] 30#30: gracefully shutting down
+2022/08/25 12:58:33 [notice] 30#30: exiting
+2022/08/25 12:58:33 [notice] 31#31: gracefully shutting down
+2022/08/25 12:58:33 [notice] 31#31: exiting
+2022/08/25 12:58:33 [notice] 31#31: exit
+2022/08/25 12:58:33 [notice] 30#30: exit
+2022/08/25 12:58:33 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/08/25 12:58:33 [notice] 1#1: worker process 31 exited with code 0
+2022/08/25 12:58:33 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/25 12:58:33 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/08/25 12:58:33 [notice] 1#1: worker process 30 exited with code 0
+2022/08/25 12:58:33 [notice] 1#1: exit
+2022/08/25 12:58:42 [notice] 1#1: using the "epoll" event method
+2022/08/25 12:58:42 [notice] 1#1: nginx/1.21.6
+2022/08/25 12:58:42 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/08/25 12:58:42 [notice] 1#1: OS: Linux 5.15.0-1011-oracle
+2022/08/25 12:58:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/25 12:58:42 [notice] 1#1: start worker processes
+2022/08/25 12:58:42 [notice] 1#1: start worker process 30
+2022/08/25 12:58:42 [notice] 1#1: start worker process 31
+2022/08/25 12:59:01 [warn] 31#31: *14 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 42.73.17.151, server: , request: "GET /static/js/main.01bfde30.chunk.js HTTP/1.1", upstream: "http://172.18.0.2:80/static/js/main.01bfde30.chunk.js", host: "drone.chunyen.xyz", referrer: "http://drone.chunyen.xyz/login/error?message=Invalid%20state"
+2022/08/25 12:59:01 [warn] 31#31: *15 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/2/00/0000000002 while reading upstream, client: 42.73.17.151, server: , request: "GET /static/js/2.6edc03c8.chunk.js HTTP/1.1", upstream: "http://172.18.0.2:80/static/js/2.6edc03c8.chunk.js", host: "drone.chunyen.xyz", referrer: "http://drone.chunyen.xyz/login/error?message=Invalid%20state"
+2022/08/25 12:59:02 [warn] 30#30: *13 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/3/00/0000000003 while reading upstream, client: 42.73.17.151, server: , request: "GET /static/media/Inter-SemiBold.c6588ec1.ttf HTTP/1.1", upstream: "http://172.18.0.2:80/static/media/Inter-SemiBold.c6588ec1.ttf", host: "drone.chunyen.xyz", referrer: "http://drone.chunyen.xyz/static/css/main.a224ae8d.chunk.css"
+2022/08/25 12:59:02 [warn] 31#31: *9 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/4/00/0000000004 while reading upstream, client: 42.73.17.151, server: , request: "GET /static/media/Inter-Regular.9cd7588f.ttf HTTP/1.1", upstream: "http://172.18.0.2:80/static/media/Inter-Regular.9cd7588f.ttf", host: "drone.chunyen.xyz", referrer: "http://drone.chunyen.xyz/static/css/main.a224ae8d.chunk.css"
+2022/08/25 13:33:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/08/25 13:33:32 [notice] 31#31: gracefully shutting down
+2022/08/25 13:33:32 [notice] 31#31: exiting
+2022/08/25 13:33:32 [notice] 31#31: exit
+2022/08/25 13:33:32 [notice] 30#30: gracefully shutting down
+2022/08/25 13:33:32 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/08/25 13:33:32 [notice] 1#1: worker process 31 exited with code 0
+2022/08/25 13:33:32 [notice] 1#1: signal 29 (SIGIO) received
+2022/08/25 13:33:58 [notice] 1#1: using the "epoll" event method
+2022/08/25 13:33:58 [notice] 1#1: nginx/1.21.6
+2022/08/25 13:33:58 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/08/25 13:33:58 [notice] 1#1: OS: Linux 5.15.0-1011-oracle
+2022/08/25 13:33:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/08/25 13:33:58 [notice] 1#1: start worker processes
+2022/08/25 13:33:58 [notice] 1#1: start worker process 30
+2022/08/25 13:33:58 [notice] 1#1: start worker process 31
