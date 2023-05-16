@@ -6,8 +6,10 @@ services:
     image: drone/drone:2
     expose:
       - 80
+      - 443
     volumes:
       - ./drone:/data
+      - ./nginx:/nginx
       - /var/run/docker.sock:/var/run/docker.sock
     restart: always
     environment:
@@ -20,6 +22,8 @@ services:
       - DRONE_CRON_INTERVAL=${DRONE_CRON_INTERVAL}
       - DRONE_USER_CREATE=${DRONE_USER_CREATE}
       - DRONE_USER_FILTER=${DRONE_USER_FILTER}
+      - DRONE_TLS_CERT=${DRONE_TLS_CERT}
+      - DRONE_TLS_KEY=${DRONE_TLS_KEY}
 
   drone-runner:
     container_name: drone_runner
@@ -30,22 +34,25 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      - DRONE_RPC_PROTO=${DRONE_SERVER_PROTO}
+      - DRONE_RPC_PROTO=${DRONE_RPC_PROTO}
       - DRONE_RPC_HOST=${DRONE_RPC_HOST}
       - DRONE_RPC_SECRET=${DRONE_RPC_SECRET}
       - DRONE_RUNNER_CAPACITY=${DRONE_RUNNER_CAPACITY}
       - DRONE_RUNNER_NAME=${DRONE_RUNNER_NAME}
-  
+
   nginx:
     image: nginx:1.21.6
     container_name: drone_nginx
     restart: always
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./logs/:/var/log/nginx/
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - ./nginx/proxy_params:/etc/nginx/proxy_params
+      - ./nginx/server.crt:/etc/nginx/server.crt
+      - ./nginx/server.key:/etc/nginx/server.key
     links:
       - drone-server
     depends_on:
