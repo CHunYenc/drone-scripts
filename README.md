@@ -13,6 +13,7 @@ offical link: https://www.drone.io/
 
 # 如果有 HOST 與 Client, 必須一樣
 DRONE_RPC_SECRET=?
+<<<<<<< HEAD
 
 #################################################
 # 以下為 DRONE-SERVER 的設定
@@ -27,6 +28,22 @@ DRONE_GITEA_CLIENT_SECRET=??
 DRONE_USER_CREATE=username:??,admin:true
 # DRONE SERVER 瀏覽的網址
 DRONE_SERVER_HOST=http://??:??
+=======
+
+#################################################
+# 以下為 DRONE-SERVER 的設定
+#################################################
+
+# DRONE GITEA SERVER URL 簡單來說就是你的 GIT URL
+DRONE_GITEA_SERVER=http://?:?
+# 到 DRONE GITEA 申請的 ID 與 SECRET
+DRONE_GITEA_CLIENT_ID=?
+DRONE_GITEA_CLIENT_SECRET=?
+# DRONE SERVER ADMIN
+DRONE_USER_CREATE=username:?,admin:true
+# DRONE SERVER 瀏覽的網址
+DRONE_SERVER_HOST=http://?:?
+>>>>>>> b4d7cbdabe40f7ced44b5f6b21e41b30b57ac0c5
 DRONE_SERVER_PROTO=http
 DRONE_TLS_AUTOCERT=false
 # 如果是要部署 SSL 環境時，要使用下面的方式
