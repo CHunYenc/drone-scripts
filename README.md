@@ -1,5 +1,7 @@
 # drone-scripts
 
+[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/y570.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
 offical link: https://www.drone.io/
 
 # 使用教學
